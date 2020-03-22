@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Possum Love</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: darkgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .navbar {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkgray;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .buttons {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        a:hover:not(.active) {
+            background-color: dimgray;
+        }
+
+        .active {
+            background-color: salmon;
+        }
+
+        .header-pic {
+            width:100%;
+            height: auto;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            font-size: 72px;
+            font-family: Lobster
+        }
+
+        .title {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        .facts {
+        border-style: dotted;
+        border-color: white;
+        border-width: 5px;
+        text-align: left;
+        background-color: salmon;
+        color: white;
+        padding: 50;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-row-gap: 10px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            height: 500px;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Lobster;
+        }
+
+    </style>
+</head>
+
+<body id="home">
+    <div>
+        <ul class="navbar">
+            <li class="active buttons"><a href="#home">Home</a></li>
+            <li class="buttons"><a href="#possum">What's in a possum?</a></li>
+            <li class="buttons"><a href="#gallery">Gallery</a></li>
+            <li class="buttons"><a href="#links">Links</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <img class="header-pic" src="https://images.unsplash.com/photo-1577879674193-f9340fd47115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Pleasant possum">
+        <div class="title">Possum Love</div>
+    </div>
+    
+    <div class="grid-container">
+    <div class="grid-item" id="possum">
+    <h2 style="font-family: Lobster">So what actually is a possum?</h2>
+    <p>Possum is North America's only marsupial.<br>
+    Things possums enjoy are hissing, playing dead, and munching on delicious fruit.<br>
+</p>
+    </div>
+
+    <div class="grid-item facts">
+        <h3 style="font-family: Lobster">Fun facts about possums</h3>
+    <ul style="list-style-type: circle">
+        <li>Babby possums spend up to 4 months in their mothers' pouch—longer than the gestation period!</li>
+        <li>Possums' body temperature is lower than that of racoons or skunks, which means most of them are immune to rabies!</li>
+        <li>Every week a single possum can eat up to 4000 ticks, effectively protecting us from Lyme disease!</li>
+    </ul>
+    </div>
+    </div>
+
+    <div id="gallery">
+        <h1>Possum Gallery</h1>
+    </div>
+
+    <div class="grid-container">
+        
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1577879673880-1f9c0e75b250?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Possum showing teeth">
+        </div>
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1571916040868-472fc7d43ab5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80" alt="Possum in a trashcan">  
+        </div>
+    </div>
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1519003017532-75fb8e1d4a2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1298&q=80" alt="Possum on a branch">
+        </div>
+        <div class="grid-item">
+            <img src="https://cdn.pixabay.com/photo/2018/12/07/04/20/opossum-3861107_960_720.jpg" alt="Possum on the road">
+        </div>
+    </div> 
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://cdn.pixabay.com/photo/2016/11/06/05/31/possum-1802326_960_720.jpg" alt="Possum family on a branch">
+        </div>
+        <div class="grid-item">
+            <img src="https://cdn.pixabay.com/photo/2020/01/23/14/03/possum-4787791_960_720.jpg" alt="Possum babby">
+        </div>
+    </div> 
+
+
+    <div>
+    <div id="links">
+        <h1>Cute possum videos</h1>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=g4pMRuok7bA" target="_blank">Meet and Greet: Ophelia the Opossum!</a></li>
+            <li><a href="https://www.youtube.com/watch?v=oM-TBYPLz-U&list=LLSprYmWAlG4YVFkrsl2CaAA&index=2&t=0s" target="_blank">Babby possums eating watermelon</a></li>
+            <li><a href="https://www.youtube.com/watch?v=fcHRmIYRXvo&list=LLSprYmWAlG4YVFkrsl2CaAA&index=2" target="_blank">Tiny possum munching on grape</a></li>
+        </ul>
+    <p style="text-align: right">Pictures of possums taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a> and <a href=https://pixabay.com/ target="_blank">Pixabay</a>.</p>
+    </div>
+    </div>
+</body>
+</html>
